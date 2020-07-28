@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    background-color: #FFF;
+}
+
+:root {
+    --main-pcvb-color: #183C7D;
+    --secondary-pcvb-color: #EFCA08;
+}
+
+header {
+    /* background-color: aqua; */
+}
+
+header .title {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+header .title .titleText {
+    font-size: 50px;
+}
+
+header .title img {
+    width: 250px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.teamNameInput {
+    width: 500px;
+    height: 400px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 4px solid var(--secondary-pcvb-color);
+}
+
+.teamContainer {
+    width: 500px;
+    height: 400px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    border-radius: 10px;
+    border: 4px solid var(--main-pcvb-color);
+    overflow: scroll;
+}
+
+.teamNameInput .teamNameText {
+    font-size: 35px;
+}
+.teamNameInput .teamNameInp {
+    margin: 30px;
+    font-size: 35px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: #d6d6d6;
+}
+
+.teamNameInput .submitButton {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.teamNameInput .submitButton span{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    color: var(--secondary-pcvb-color);
+    background-color: var(--main-pcvb-color);
+    cursor: pointer;
+}
+
+
+.teamNameInput .submitButton:hover span {
+    width: 60px;
+    height: 60px;
+    font-size: 45px;
+    transition: 0.3S linear;
+}
+
+.team1 {
+    width: 90%;
+    min-height: 50px;
+    margin-top: 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--main-pcvb-color);
+}
+
+.team1 .teamName {
+    width: 250px;
+    margin-right: 5px;
+    font-size: 25px;
+    overflow: scroll;
+    color: var(--secondary-pcvb-color);
+}
+
+.team1 .deleteTeam span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 25px;
+    background-color: var(--secondary-pcvb-color);
+    color: var(--main-pcvb-color);
+}
+
+.team2 {
+    width: 90%;
+    min-height: 50px;
+    margin-top: 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--secondary-pcvb-color);
+}
+
+.team2 .teamName {
+    width: 250px;
+    overflow: scroll;
+    font-size: 25px;
+    margin-right: 5px;
+    color: var(--main-pcvb-color);
+}
+
+.deleteTeam {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team2 .deleteTeam span{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 25px;
+    background-color: var(--main-pcvb-color);
+    color: var(--secondary-pcvb-color);
+}
+
+.deleteTeam:hover span{
+ width: 25px;
+ height: 25px;
+ font-size: 30px;
+ transition: 0.3S linear;
+}
