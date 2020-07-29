@@ -2,17 +2,25 @@ const team_name_elem = document.querySelector(".teamNameInp")
 const submit_button = document.querySelector(".submitButton")
 const team_container_elem = document.querySelector(".teamContainer")
 let delete_team_elem = document.querySelectorAll(".deleteTeam")
+let team_tabs = []
+
+class Team {
+    constructor(name,point, placement, opponent, pool) {
+        this.name = name
+        this.point = point
+        this.placement = placement
+        this.opponent = opponent
+        this.pool = pool
+    }
+}
 
 let teamPos = 1
 let new_team_name = team_name_elem.value
 
 function updateElem() {
-    console.log(delete_team_elem);
-    
     delete_team_elem.forEach(element => {
         element.addEventListener("click", () => {
-            element.parentElement.remove()
-            
+            element.parentElement.remove()     
         })
     });
 }
@@ -40,5 +48,6 @@ submit_button.addEventListener("click", () => {
     team_elem_delete.appendChild(team_delete_elem)
     delete_team_elem = document.querySelectorAll(".deleteTeam")
     updateElem()
+    team_tabs.push(new Team(new_team_name, 0, 0 , []))
     teamPos == 1 ? teamPos = 2 : teamPos = 1
 })
